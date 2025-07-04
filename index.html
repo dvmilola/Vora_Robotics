@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vora Robotics - Empowering Industries Through Innovative Automation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="Assets/Vora_Robotics_Horizontal_Logo_RGB_Green_White.png" alt="Vora Robotics" class="logo">
+            </div>
+            <div class="nav-menu">
+                <a href="#features" class="nav-link">Solutions</a>
+                <a href="#pricing" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn-secondary">Portal</button>
+                <button class="btn-primary">GET STARTED</button>
+            </div>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Full-Screen Video Carousel -->
+    <section class="hero">
+        <div class="video-carousel">
+            <div class="video-carousel-container">
+                <div class="video-slide active">
+                    <video autoplay muted loop preload="metadata">
+                        <source src="Assets/drone.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="container">
+                            <div class="hero-content">
+                                <div class="hero-badge">Robotics & Automation</div>
+                                <h1 class="hero-title">Your New Automation Partner</h1>
+                                <p class="hero-subtitle">Get AI-Powered Robotics Solutions in Seconds</p>
+                            </div>
+                            <div class="video-caption">
+                                <h3>High-Precision Drone Manufacturing</h3>
+                                <p>for Tomorrow's Needs</p>
+                            </div>
+                            <div class="hero-cta">
+                                <button class="btn-primary large">GET STARTED →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-slide">
+                    <video autoplay muted loop preload="metadata">
+                        <source src="Assets/automation.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="container">
+                            <div class="hero-content">
+                                <div class="hero-badge">Robotics & Automation</div>
+                                <h1 class="hero-title">Your New Automation Partner</h1>
+                                <p class="hero-subtitle">Get AI-Powered Robotics Solutions in Seconds</p>
+                            </div>
+                            <div class="video-caption">
+                                <h3>Revolutionizing Industries</h3>
+                                <p>with Smart Robotics and Automation</p>
+                            </div>
+                            <div class="hero-cta">
+                                <button class="btn-primary large">GET STARTED →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-slide">
+                    <video autoplay muted loop preload="metadata">
+                        <source src="Assets/tools.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="container">
+                            <div class="hero-content">
+                                <div class="hero-badge">Robotics & Automation</div>
+                                <h1 class="hero-title">Your New Automation Partner</h1>
+                                <p class="hero-subtitle">Get AI-Powered Robotics Solutions in Seconds</p>
+                            </div>
+                            <div class="video-caption">
+                                <h3>Custom-Engineered Tools</h3>
+                                <p>for Industry-Specific Applications</p>
+                            </div>
+                            <div class="hero-cta">
+                                <button class="btn-primary large">GET STARTED →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-slide">
+                    <video autoplay muted loop preload="metadata">
+                        <source src="Assets/raas.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <div class="container">
+                            <div class="hero-content">
+                                <div class="hero-badge">Robotics & Automation</div>
+                                <h1 class="hero-title">Your New Automation Partner</h1>
+                                <p class="hero-subtitle">Get AI-Powered Robotics Solutions in Seconds</p>
+                            </div>
+                            <div class="video-caption">
+                                <h3>Flexible Robotics-as-a-Service</h3>
+                                <p>Solutions for Every Industry</p>
+                            </div>
+                            <div class="hero-cta">
+                                <button class="btn-primary large">GET STARTED →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-carousel-controls">
+                <button class="video-carousel-prev" onclick="changeVideoSlide(-1)">
+                    <span>‹</span>
+                </button>
+                <button class="video-carousel-next" onclick="changeVideoSlide(1)">
+                    <span>›</span>
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Futuristic Features Overview -->
+    <section class="cyber-features">
+        <div class="neural-grid-bg"></div>
+        <div class="data-particles"></div>
+        
+        <div class="container">
+            <div class="cyber-header">
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">SYSTEM_ONLINE</span>
+                </div>
+                <h2 class="cyber-title">All Your Automation Needs in a Single AI-Powered Platform</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="holographic-grid">
+                <div class="holo-card primary-node">
+                    <div class="card-glow"></div>
+                    <div class="node-header">
+                        <div class="node-icon">🤖</div>
+                        <div class="node-status">
+                            <span class="status-indicator active"></span>
+                            <span class="node-id">NODE_001</span>
+                        </div>
+                    </div>
+                    <div class="node-content">
+                        <h3 class="node-title">SMART AUTOMATION IN SECONDS</h3>
+                        <p class="node-description">Deploy intelligent automation solutions with our AI-powered robotics platform. Streamline your industrial processes with cutting-edge technology.</p>
+                        <div class="progress-matrix">
+                            <div class="matrix-line"></div>
+                            <div class="matrix-line"></div>
+                            <div class="matrix-line"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="holo-card secondary-node">
+                    <div class="node-header">
+                        <div class="node-icon">📊</div>
+                        <div class="node-status">
+                            <span class="status-indicator active"></span>
+                            <span class="node-id">NODE_002</span>
+                        </div>
+                    </div>
+                    <div class="node-content">
+                        <h3 class="node-title">PROCESS OPTIMIZATION</h3>
+                        <p class="node-description">Optimize your manufacturing and operational processes with real-time analytics and intelligent automation systems.</p>
+                        <div class="data-stream">
+                            <span class="stream-dot"></span>
+                            <span class="stream-dot"></span>
+                            <span class="stream-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="holo-card primary-node">
+                    <div class="card-glow"></div>
+                    <div class="node-header">
+                        <div class="node-icon">⚙️</div>
+                        <div class="node-status">
+                            <span class="status-indicator active"></span>
+                            <span class="node-id">NODE_003</span>
+                        </div>
+                    </div>
+                    <div class="node-content">
+                        <h3 class="node-title">CUSTOM ROBOTIC SOLUTIONS</h3>
+                        <p class="node-description">Tailored robotics solutions designed specifically for your industry needs and operational requirements.</p>
+                        <div class="progress-matrix">
+                            <div class="matrix-line"></div>
+                            <div class="matrix-line"></div>
+                            <div class="matrix-line"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="holo-card secondary-node">
+                    <div class="node-header">
+                        <div class="node-icon">🏭</div>
+                        <div class="node-status">
+                            <span class="status-indicator active"></span>
+                            <span class="node-id">NODE_004</span>
+                        </div>
+                    </div>
+                    <div class="node-content">
+                        <h3 class="node-title">SUPPORTING MASSIVE OPERATIONS</h3>
+                        <p class="node-description">Scale your automation from small workshops to massive industrial facilities with our robust robotics infrastructure.</p>
+                        <div class="data-stream">
+                            <span class="stream-dot"></span>
+                            <span class="stream-dot"></span>
+                            <span class="stream-dot"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="holo-card primary-node">
+                    <div class="card-glow"></div>
+                    <div class="node-header">
+                        <div class="node-icon">💬</div>
+                        <div class="node-status">
+                            <span class="status-indicator active"></span>
+                            <span class="node-id">NODE_005</span>
+                        </div>
+                    </div>
+                    <div class="node-content">
+                        <h3 class="node-title">INTERACT WITH YOUR SYSTEMS</h3>
+                        <p class="node-description">Command and monitor your robotic systems through intuitive interfaces and natural language processing.</p>
+                        <div class="progress-matrix">
+                            <div class="matrix-line"></div>
+                            <div class="matrix-line"></div>
+                            <div class="matrix-line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real Industry Impact -->
+    <section class="industry-impact">
+        <div class="container">
+            <div class="impact-header">
+                <h2 class="section-title">Proven Results Across Industries</h2>
+                <p class="section-subtitle">Real automation solutions delivering measurable impact for leading companies</p>
+            </div>
+            
+            <div class="impact-grid">
+                <!-- Initially Visible Cases -->
+                <div class="impact-case featured">
+                    <div class="case-header">
+                        <div class="industry-icon">🏭</div>
+                        <div class="case-meta">
+                            <span class="industry-label">MANUFACTURING</span>
+                            <span class="company-type">Fortune 500 Automotive</span>
+                        </div>
+                    </div>
+                    <h3>Assembly Line Optimization</h3>
+                    <p>Deployed 24 robotic arms with AI vision systems for quality control and assembly tasks</p>
+                    <div class="impact-metrics">
+                        <div class="metric">
+                            <span class="metric-value">85%</span>
+                            <span class="metric-label">Faster Production</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">99.7%</span>
+                            <span class="metric-label">Quality Rate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="impact-case featured">
+                    <div class="case-header">
+                        <div class="industry-icon">🏥</div>
+                        <div class="case-meta">
+                            <span class="industry-label">HEALTHCARE</span>
+                            <span class="company-type">Regional Hospital</span>
+                        </div>
+                    </div>
+                    <h3>Surgical Precision Robotics</h3>
+                    <p>AI-assisted robotic surgery systems with real-time patient monitoring</p>
+                    <div class="impact-metrics">
+                        <div class="metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">Success Rate</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">50%</span>
+                            <span class="metric-label">Recovery Time</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hidden Cases (Initially) -->
+                <div class="impact-case hidden-case">
+                    <div class="case-header">
+                        <div class="industry-icon">📦</div>
+                        <div class="case-meta">
+                            <span class="industry-label">LOGISTICS</span>
+                            <span class="company-type">E-commerce Leader</span>
+                        </div>
+                    </div>
+                    <h3>Warehouse Automation</h3>
+                    <p>Autonomous mobile robots handling inventory sorting and package routing</p>
+                    <div class="impact-metrics">
+                        <div class="metric">
+                            <span class="metric-value">300%</span>
+                            <span class="metric-label">Order Processing</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">24/7</span>
+                            <span class="metric-label">Operations</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="impact-case hidden-case">
+                    <div class="case-header">
+                        <div class="industry-icon">🌾</div>
+                        <div class="case-meta">
+                            <span class="industry-label">AGRICULTURE</span>
+                            <span class="company-type">Precision Farm Co.</span>
+                        </div>
+                    </div>
+                    <h3>Smart Crop Management</h3>
+                    <p>Drone-based monitoring and robotic harvesting for precision agriculture</p>
+                    <div class="impact-metrics">
+                        <div class="metric">
+                            <span class="metric-value">40%</span>
+                            <span class="metric-label">Yield Increase</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">60%</span>
+                            <span class="metric-label">Labor Reduction</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="impact-case hidden-case">
+                    <div class="case-header">
+                        <div class="industry-icon">🔧</div>
+                        <div class="case-meta">
+                            <span class="industry-label">AEROSPACE</span>
+                            <span class="company-type">Defense Contractor</span>
+                        </div>
+                    </div>
+                    <h3>Precision Component Manufacturing</h3>
+                    <p>Ultra-precise machining robots for critical aerospace components</p>
+                    <div class="impact-metrics">
+                        <div class="metric">
+                            <span class="metric-value">0.001mm</span>
+                            <span class="metric-label">Tolerance</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">100%</span>
+                            <span class="metric-label">Compliance</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="impact-case hidden-case">
+                    <div class="case-header">
+                        <div class="industry-icon">⚡</div>
+                        <div class="case-meta">
+                            <span class="industry-label">ENERGY</span>
+                            <span class="company-type">Solar Plant Operator</span>
+                        </div>
+                    </div>
+                    <h3>Renewable Energy Maintenance</h3>
+                    <p>Automated cleaning and maintenance robots for solar panel farms</p>
+                    <div class="impact-metrics">
+                        <div class="metric">
+                            <span class="metric-value">25%</span>
+                            <span class="metric-label">Energy Output</span>
+                        </div>
+                        <div class="metric">
+                            <span class="metric-value">90%</span>
+                            <span class="metric-label">Cost Savings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="impact-cta">
+                <button class="btn-primary expand-cases-btn" onclick="toggleCaseStudies()">
+                    <span class="btn-text">VIEW ALL CASE STUDIES</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about cyber-about">
+        <div class="neural-grid-bg"></div>
+        <div class="floating-data-streams"></div>
+        
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="system-status">
+                        <span class="status-dot"></span>
+                        <span class="status-text">ENGINEERING_ACTIVE</span>
+                    </div>
+                    <h2 class="cyber-title">Built by Engineers, for Industries</h2>
+                    <div class="title-underline"></div>
+                    
+                    <div class="about-description">
+                        <p>Vora Robotics is at the forefront of industrial automation, combining cutting-edge AI technology with practical robotics solutions. Our mission is to empower industries through innovative automation that enhances productivity, ensures safety, and drives sustainable growth.</p>
+                        <p>From manufacturing and logistics to healthcare and agriculture, we deliver robotics solutions that transform how businesses operate. Our team of expert engineers and AI specialists work tirelessly to create automation systems that adapt to your unique operational needs.</p>
+                    </div>
+                    
+                    <div class="engineering-stats">
+                        <div class="stat-node">
+                            <div class="node-pulse"></div>
+                            <span class="stat-value">100+</span>
+                            <span class="stat-label">Engineers</span>
+                        </div>
+                        <div class="stat-node">
+                            <div class="node-pulse"></div>
+                            <span class="stat-value">24/7</span>
+                            <span class="stat-label">Innovation</span>
+                        </div>
+                        <div class="stat-node">
+                            <div class="node-pulse"></div>
+                            <span class="stat-value">∞</span>
+                            <span class="stat-label">Possibilities</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="holographic-frame">
+                        <div class="frame-corners">
+                            <div class="corner tl"></div>
+                            <div class="corner tr"></div>
+                            <div class="corner bl"></div>
+                            <div class="corner br"></div>
+                        </div>
+                        
+                        <div class="image-container">
+                            <img src="Assets/ai-generated-7718642_1280.jpg" alt="AI-Powered Robotics Innovation" class="hero-image">
+                            <div class="holographic-overlay">
+                                <div class="scan-lines"></div>
+                                <div class="data-overlay">
+                                    <div class="data-stream">
+                                        <span class="data-point">AI_PROCESSING: 99.7%</span>
+                                        <span class="data-point">NEURAL_NETWORK: ACTIVE</span>
+                                        <span class="data-point">ROBOTICS_CORE: ONLINE</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quantum-particles">
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                            <div class="particle"></div>
+                        </div>
+                        
+                        <div class="tech-label">
+                            <span class="label-text">NEXT-GEN ROBOTICS</span>
+                            <div class="label-pulse"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growth Stats -->
+    <section class="growth-stats">
+        <div class="container">
+            <h2 class="section-title">A Glimpse into Our Impact</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">
+                        <span class="arrow">→</span>
+                        <span>TRUSTED CLIENTS</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500K</div>
+                    <div class="stat-label">
+                        <span class="arrow">→</span>
+                        <span>HOURS AUTOMATED</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">
+                        <span class="arrow">→</span>
+                        <span>INDUSTRIES SERVED</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">
+                        <span class="arrow">→</span>
+                        <span>SYSTEM MONITORING</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Solutions Hub -->
+    <section class="tech-solutions-hub">
+        <div class="neural-grid-bg"></div>
+        <div class="floating-data-streams"></div>
+        
+        <div class="container">
+            <div class="tech-header">
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">TECH_STACK_ACTIVE</span>
+                </div>
+                <h2 class="tech-title">Our Technology Foundation</h2>
+                <div class="title-underline"></div>
+                <p class="tech-subtitle">Cutting-edge technologies powering next-generation automation solutions</p>
+            </div>
+            
+            <div class="tech-solutions-grid">
+                <div class="tech-solution primary-tech">
+                    <div class="tech-icon">
+                        <div class="icon-glow"></div>
+                        🤖
+                    </div>
+                    <div class="tech-content">
+                        <h3>AI & Machine Learning</h3>
+                        <p>Advanced neural networks enabling real-time decision making and predictive automation across all industrial environments.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenCV</span>
+                        </div>
+                    </div>
+                    <div class="progress-indicator">
+                        <div class="progress-ring">
+                            <div class="progress-fill" data-progress="95"></div>
+                        </div>
+                        <span class="progress-label">95% Accuracy</span>
+                    </div>
+                </div>
+                
+                <div class="tech-solution secondary-tech">
+                    <div class="tech-icon">
+                        <div class="icon-glow"></div>
+                        🔧
+                    </div>
+                    <div class="tech-content">
+                        <h3>Robotic Control Systems</h3>
+                        <p>Precision control algorithms ensuring optimal performance in manufacturing, logistics, and specialized applications.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">ROS</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Real-Time</span>
+                        </div>
+                    </div>
+                    <div class="progress-indicator">
+                        <div class="progress-ring">
+                            <div class="progress-fill" data-progress="98"></div>
+                        </div>
+                        <span class="progress-label">98% Uptime</span>
+                    </div>
+                </div>
+                
+                <div class="tech-solution primary-tech">
+                    <div class="tech-icon">
+                        <div class="icon-glow"></div>
+                        ☁️
+                    </div>
+                    <div class="tech-content">
+                        <h3>Cloud Infrastructure</h3>
+                        <p>Scalable cloud architecture supporting remote monitoring, data analytics, and seamless system integration.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">IoT Core</span>
+                        </div>
+                    </div>
+                    <div class="progress-indicator">
+                        <div class="progress-ring">
+                            <div class="progress-fill" data-progress="99"></div>
+                        </div>
+                        <span class="progress-label">99% Reliability</span>
+                    </div>
+                </div>
+                
+                <div class="tech-solution secondary-tech">
+                    <div class="tech-icon">
+                        <div class="icon-glow"></div>
+                        📊
+                    </div>
+                    <div class="tech-content">
+                        <h3>Data Analytics Platform</h3>
+                        <p>Real-time analytics and insights driving continuous optimization and predictive maintenance capabilities.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Apache Kafka</span>
+                            <span class="tech-tag">ElasticSearch</span>
+                            <span class="tech-tag">Grafana</span>
+                        </div>
+                    </div>
+                    <div class="progress-indicator">
+                        <div class="progress-ring">
+                            <div class="progress-fill" data-progress="92"></div>
+                        </div>
+                        <span class="progress-label">92% Efficiency</span>
+                    </div>
+                </div>
+                
+                <div class="tech-solution featured-tech">
+                    <div class="tech-icon">
+                        <div class="icon-glow"></div>
+                        🔐
+                    </div>
+                    <div class="tech-content">
+                        <h3>Industrial Security</h3>
+                        <p>Enterprise-grade security protocols protecting critical industrial infrastructure and sensitive operational data.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Zero Trust</span>
+                            <span class="tech-tag">Encryption</span>
+                            <span class="tech-tag">ISO 27001</span>
+                        </div>
+                    </div>
+                    <div class="progress-indicator">
+                        <div class="progress-ring">
+                            <div class="progress-fill" data-progress="100"></div>
+                        </div>
+                        <span class="progress-label">100% Secure</span>
+                    </div>
+                </div>
+                
+                <div class="tech-solution featured-tech">
+                    <div class="tech-icon">
+                        <div class="icon-glow"></div>
+                        ⚡
+                    </div>
+                    <div class="tech-content">
+                        <h3>Edge Computing</h3>
+                        <p>Low-latency processing at the edge ensuring instant response times for critical automation decisions.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Edge AI</span>
+                            <span class="tech-tag">5G Ready</span>
+                            <span class="tech-tag">Local Processing</span>
+                        </div>
+                    </div>
+                    <div class="progress-indicator">
+                        <div class="progress-ring">
+                            <div class="progress-fill" data-progress="97"></div>
+                        </div>
+                        <span class="progress-label">97% Speed</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tech-cta">
+                <button class="btn-primary tech-btn">
+                    <span class="btn-text">EXPLORE OUR TECHNOLOGY</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cyberpunk Matrix Interface -->
+    <section class="future-section matrix-interface" data-section="capabilities">
+        <div class="matrix-rain"></div>
+        <div class="circuit-overlay"></div>
+        
+        <div class="container">
+            <div class="interface-terminal">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">VORA_SYSTEMS_V2.4.7</span>
+                </div>
+                
+                <div class="terminal-body">
+                    <div class="command-line">
+                        <span class="prompt">vora@quantum:~$</span>
+                        <span class="typed-text">initialize --capabilities</span>
+                        <span class="cursor">|</span>
+                    </div>
+                    
+                    <div class="capability-grid">
+                        <div class="capability-module">
+                            <div class="module-header">
+                                <span class="module-status active"></span>
+                                QUANTUM_PROCESSING.exe
+                            </div>
+                            <div class="module-description">
+                                Parallel universe computing for impossible solutions
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 97%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="capability-module">
+                            <div class="module-header">
+                                <span class="module-status active"></span>
+                                NEURAL_ADAPTATION.dll
+                            </div>
+                            <div class="module-description">
+                                Self-evolving algorithms that rewrite reality
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 89%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="capability-module">
+                            <div class="module-header">
+                                <span class="module-status active"></span>
+                                DIMENSIONAL_MANUFACTURING.app
+                            </div>
+                            <div class="module-description">
+                                Creating in spaces that don't exist yet
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 94%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="capability-module">
+                            <div class="module-header">
+                                <span class="module-status active"></span>
+                                CONSCIOUSNESS_BRIDGE.ai
+                            </div>
+                            <div class="module-description">
+                                Direct neural interface with machine intelligence
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 76%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="command-output">
+                        <div class="output-line success">✓ All systems operational</div>
+                        <div class="output-line info">⟳ Reality optimization: 847% efficiency gain</div>
+                        <div class="output-line warning">⚠ Singularity threshold approaching...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dimensional Portal Contact -->
+    <section class="future-section dimensional-portal" data-section="contact">
+        
+        <div class="container">
+            <div class="portal-content">
+                <div class="transmission-header">
+                    <div class="signal-bars">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="transmission-text">INCOMING TRANSMISSION</div>
+                </div>
+                
+                <div class="dimensional-title">
+                    CROSS THE THRESHOLD
+                </div>
+                
+                <div class="portal-message">
+                    Your dimension. Our technology. Infinite possibilities.
+                    <br>
+                    Ready to transcend the limitations of conventional automation?
+                </div>
+                
+                <div class="quantum-buttons">
+                    <button class="quantum-btn primary">
+                        <span class="btn-hologram"></span>
+                        <span class="btn-text">INITIATE CONTACT</span>
+                        <div class="btn-particles"></div>
+                    </button>
+                    
+                    <button class="quantum-btn secondary">
+                        <span class="btn-hologram"></span>
+                        <span class="btn-text">ACCESS ARCHIVES</span>
+                        <div class="btn-particles"></div>
+                    </button>
+                </div>
+                
+                <div class="contact-matrix">
+                    <div class="contact-node">
+                        <div class="node-icon">⚡</div>
+                        <div class="node-data">
+                            <div class="node-label">QUANTUM_CHANNEL</div>
+                            <div class="node-value">future@vora.nexus</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-node">
+                        <div class="node-icon">📡</div>
+                        <div class="node-data">
+                            <div class="node-label">NEURAL_LINK</div>
+                            <div class="node-value">+∞ (INSTANT)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-node">
+                        <div class="node-icon">🌌</div>
+                        <div class="node-data">
+                            <div class="node-label">DIMENSIONAL_SYNC</div>
+                            <div class="node-value">REAL_TIME++</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="Assets/Vora_Robotics_Horizontal_Logo_RGB_Green_White.png" alt="Vora Robotics" class="logo">
+                    <p>Empowering industries through innovative automation solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="#">Industrial Automation</a></li>
+                        <li><a href="#">Smart Manufacturing</a></li>
+                        <li><a href="#">Process Optimization</a></li>
+                        <li><a href="#">Custom Robotics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Support Portal</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vora Robotics. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
