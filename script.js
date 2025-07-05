@@ -292,6 +292,22 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialize scroll animations
     initializeScrollAnimations();
+
+    // Gallery expansion functionality
+    const expandBtn = document.querySelector('.expand-gallery-btn');
+    const galleryGrid = document.querySelector('.holographic-gallery-grid');
+    
+    if (expandBtn && galleryGrid) {
+        expandBtn.addEventListener('click', function() {
+            galleryGrid.classList.add('expanded');
+            expandBtn.style.display = 'none';
+            
+            // Scroll to the expanded gallery with smooth animation
+            setTimeout(() => {
+                galleryGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        });
+    }
 });
 
 // Force videos to autoplay on page load
