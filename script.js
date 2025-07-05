@@ -293,21 +293,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize scroll animations
     initializeScrollAnimations();
 
-    // Gallery expansion functionality
-    const expandBtn = document.querySelector('.expand-gallery-btn');
-    const galleryGrid = document.querySelector('.holographic-gallery-grid');
-    
-    if (expandBtn && galleryGrid) {
-        expandBtn.addEventListener('click', function() {
-            galleryGrid.classList.add('expanded');
-            expandBtn.style.display = 'none';
-            
-            // Scroll to the expanded gallery with smooth animation
-            setTimeout(() => {
-                galleryGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        });
-    }
+    // Initialize gallery expansion
+    initializeGalleryExpansion();
+
+    // Initialize other effects
+    addQuantumScrollBehavior();
+    addParallaxEffects();
+    createQuantumProgressIndicator();
 });
 
 // Force videos to autoplay on page load
@@ -686,5 +678,29 @@ function accessArchives() {
             behavior: 'smooth',
             block: 'start'
         });
+    }
+}
+
+function initializeGalleryExpansion() {
+    const expandBtn = document.querySelector('.expand-gallery-btn');
+    const galleryGrid = document.querySelector('.holographic-gallery-grid');
+    
+    if (expandBtn && galleryGrid) {
+        console.log('Gallery expansion initialized'); // Debug log
+        expandBtn.addEventListener('click', function() {
+            console.log('Expand button clicked'); // Debug log
+            galleryGrid.classList.add('expanded');
+            expandBtn.style.display = 'none';
+            
+            // Scroll to the expanded gallery with smooth animation
+            setTimeout(() => {
+                galleryGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        });
+    } else {
+        console.log('Gallery elements not found:', { 
+            expandBtn: !!expandBtn, 
+            galleryGrid: !!galleryGrid 
+        }); // Debug log
     }
 }

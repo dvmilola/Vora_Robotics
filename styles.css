@@ -4981,11 +4981,39 @@ body {
     padding: 2rem;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: 3rem;
 }
 
 .holographic-gallery-grid.expanded {
     display: grid;
     opacity: 1;
     transform: translateY(0);
+}
+
+.gallery-preview {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+.expand-gallery-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4ECCA3;
+    background: rgba(13, 28, 35, 0.9);
+    border: 2px solid #4ECCA3;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
 }
