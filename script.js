@@ -672,21 +672,44 @@ function initiateContact() {
 
 // Function to handle "ACCESS ARCHIVES" button click
 function accessArchives() {
-    const archivesSection = document.querySelector('.quantum-operations-gallery');
-    if (archivesSection) {
-        archivesSection.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+    // Find the gallery section by ID
+    const gallerySection = document.getElementById('gallery-section');
+    const expandBtn = document.querySelector('.expand-gallery-btn');
+    const galleryGrid = document.querySelector('.holographic-gallery-grid');
+    
+    if (gallerySection) {
+        console.log('Scrolling to gallery section'); // Debug log
+        
+        // First scroll to the gallery section
+        gallerySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        
+        // After scrolling is complete, expand the gallery
+        setTimeout(() => {
+            console.log('Expanding gallery'); // Debug log
+            if (expandBtn && galleryGrid) {
+                galleryGrid.classList.add('expanded');
+                expandBtn.style.display = 'none';
+            } else {
+                console.log('Gallery elements not found:', {
+                    expandBtn: !!expandBtn,
+                    galleryGrid: !!galleryGrid
+                });
+            }
+        }, 1000); // Wait for scroll to complete
+    } else {
+        console.log('Gallery section not found');
     }
 }
 
 function initializeGalleryExpansion() {
     const expandBtn = document.querySelector('.expand-gallery-btn');
+    const collapseBtn = document.querySelector('.collapse-gallery-btn');
     const galleryGrid = document.querySelector('.holographic-gallery-grid');
+    const galleryPreview = document.querySelector('.gallery-preview');
     
-    if (expandBtn && galleryGrid) {
+    if (expandBtn && galleryGrid && collapseBtn) {
         console.log('Gallery expansion initialized'); // Debug log
+        
         expandBtn.addEventListener('click', function() {
             console.log('Expand button clicked'); // Debug log
             galleryGrid.classList.add('expanded');
@@ -697,9 +720,21 @@ function initializeGalleryExpansion() {
                 galleryGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }, 100);
         });
+
+        collapseBtn.addEventListener('click', function() {
+            console.log('Collapse button clicked'); // Debug log
+            galleryGrid.classList.remove('expanded');
+            expandBtn.style.display = 'inline-block';
+            
+            // Scroll back to preview with smooth animation
+            setTimeout(() => {
+                galleryPreview.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        });
     } else {
         console.log('Gallery elements not found:', { 
             expandBtn: !!expandBtn, 
+            collapseBtn: !!collapseBtn,
             galleryGrid: !!galleryGrid 
         }); // Debug log
     }
