@@ -143,32 +143,6 @@ function setupVideoInteractions() {
                 console.log('Video loading error for:', video.src);
                 video.setAttribute('data-loaded', 'error');
             });
-            
-            // Enhanced hover behavior - only affect active videos
-            slide.addEventListener('mouseenter', () => {
-                if (slideIndex === currentVideoSlideIndex) {
-                    video.pause();
-                }
-            });
-            
-            slide.addEventListener('mouseleave', () => {
-                if (slideIndex === currentVideoSlideIndex) {
-                    video.play().catch(e => {
-                        console.log('Video autoplay prevented:', e);
-                    });
-                }
-            });
-            
-            // Handle click to play/pause - only for active slide
-            slide.addEventListener('click', () => {
-                if (slideIndex === currentVideoSlideIndex) {
-                    if (video.paused) {
-                        video.play().catch(e => console.log('Video play failed:', e));
-                    } else {
-                        video.pause();
-                    }
-                }
-            });
         }
     });
 }
