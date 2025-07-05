@@ -122,8 +122,6 @@ function changeVideoSlide(direction) {
     setTimeout(() => restartActiveVideo(), 100);
 }
 
-
-
 // Handle video playback interactions
 function setupVideoInteractions() {
     videoSlides.forEach((slide, slideIndex) => {
@@ -231,8 +229,6 @@ if (videoCarouselElement) {
         }, 8000);
     });
 }
-
-
 
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
@@ -574,8 +570,6 @@ function addQuantumScrollBehavior() {
     addParallaxEffects();
 }
 
-
-
 // Add parallax effects to floating elements
 function addParallaxEffects() {
     let ticking = false;
@@ -670,51 +664,37 @@ function createQuantumProgressIndicator() {
     }
 }
 
-// Case Studies Toggle Functionality
-function toggleCaseStudies() {
-    const hiddenCases = document.querySelectorAll('.hidden-case');
-    const expandBtn = document.querySelector('.expand-cases-btn');
-    const btnText = expandBtn.querySelector('.btn-text');
-    const btnArrow = expandBtn.querySelector('.btn-arrow');
-    
-    const areShown = hiddenCases[0].classList.contains('show');
-    
-    if (areShown) {
-        // Hide cases
-        hiddenCases.forEach((caseStudy, index) => {
-            setTimeout(() => {
-                caseStudy.classList.remove('show');
-                setTimeout(() => {
-                    caseStudy.style.display = 'none';
-                }, 300);
-            }, index * 100);
+// Function removed
+
+// Function to handle "INITIATE CONTACT" button click
+function initiateContact() {
+    const contactSection = document.getElementById('contact-interface');
+    if (contactSection) {
+        // Get the navbar height
+        const navbar = document.querySelector('.navbar');
+        const navbarHeight = navbar ? navbar.offsetHeight : 0;
+        
+        // Get the section's position
+        const rect = contactSection.getBoundingClientRect();
+        
+        // Calculate the scroll position to show the full section
+        const scrollPosition = window.pageYOffset + rect.top - navbarHeight;
+        
+        // Smooth scroll to position
+        window.scrollTo({
+            top: Math.max(0, scrollPosition),
+            behavior: 'smooth'
         });
-        
-        // Update button text
-        btnText.textContent = 'VIEW ALL CASE STUDIES';
-        expandBtn.classList.remove('expanded');
-        
-        // Smooth scroll to top of section
-        setTimeout(() => {
-            document.querySelector('.industry-impact').scrollIntoView({ 
-                behavior: 'smooth', 
-                block: 'start' 
-            });
-        }, 500);
-        
-    } else {
-        // Show cases with staggered animation
-        hiddenCases.forEach((caseStudy, index) => {
-            setTimeout(() => {
-                caseStudy.style.display = 'block';
-                setTimeout(() => {
-                    caseStudy.classList.add('show');
-                }, 50);
-            }, index * 150);
+    }
+}
+
+// Function to handle "ACCESS ARCHIVES" button click
+function accessArchives() {
+    const archivesSection = document.querySelector('.quantum-operations-gallery');
+    if (archivesSection) {
+        archivesSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
-        
-        // Update button text
-        btnText.textContent = 'VIEW FEWER CASE STUDIES';
-        expandBtn.classList.add('expanded');
     }
 }
