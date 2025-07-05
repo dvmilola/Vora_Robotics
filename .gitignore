@@ -1,0 +1,7 @@
+# Large media files
+Assets/*.mov
+Assets/*.mp4
+
+# OS files
+.DS_Store
+.env 
