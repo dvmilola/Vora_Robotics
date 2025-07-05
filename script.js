@@ -646,8 +646,6 @@ function createQuantumProgressIndicator() {
     }
 }
 
-// Function removed
-
 // Function to handle "INITIATE CONTACT" button click
 function initiateContact() {
     const contactSection = document.getElementById('contact-interface');
@@ -671,35 +669,7 @@ function initiateContact() {
 }
 
 // Function to handle "ACCESS ARCHIVES" button click
-function accessArchives() {
-    // Find the gallery section by ID
-    const gallerySection = document.getElementById('gallery-section');
-    const expandBtn = document.querySelector('.expand-gallery-btn');
-    const galleryGrid = document.querySelector('.holographic-gallery-grid');
-    
-    if (gallerySection) {
-        console.log('Scrolling to gallery section'); // Debug log
-        
-        // First scroll to the gallery section
-        gallerySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        
-        // After scrolling is complete, expand the gallery
-        setTimeout(() => {
-            console.log('Expanding gallery'); // Debug log
-            if (expandBtn && galleryGrid) {
-                galleryGrid.classList.add('expanded');
-                expandBtn.style.display = 'none';
-            } else {
-                console.log('Gallery elements not found:', {
-                    expandBtn: !!expandBtn,
-                    galleryGrid: !!galleryGrid
-                });
-            }
-        }, 1000); // Wait for scroll to complete
-    } else {
-        console.log('Gallery section not found');
-    }
-}
+// Moved to index.html inline script
 
 function initializeGalleryExpansion() {
     const expandBtn = document.querySelector('.expand-gallery-btn');
