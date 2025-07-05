@@ -296,6 +296,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize gallery expansion
     initializeGalleryExpansion();
 
+    // Initialize quantum particles for all quantum buttons
+    document.querySelectorAll('.quantum-btn').forEach(btn => {
+        createQuantumParticles(btn);
+    });
+
     // Initialize other effects
     addQuantumScrollBehavior();
     addParallaxEffects();
