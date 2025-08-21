@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-content">
                                 <Link to="/" className="logo">
-                        <ImageOptimizer 
+                        <img 
                           src="/Vora_Robotics_Horizontal_Logo_RGB_Green_White.png" 
                           alt="Vora Robotics"
                           loading="eager"

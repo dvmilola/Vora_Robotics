@@ -32,6 +32,14 @@ img.loaded {
     transition: all 0.3s ease-in-out;
 }
 
+/* Logo specific styles - always full size */
+.logo img.loading,
+.logo img.loaded {
+    opacity: 1 !important;
+    filter: none !important;
+    transition: none !important;
+}
+
 /* Skeleton loading animation */
 @keyframes skeleton-loading {
     0% {
@@ -95,10 +103,23 @@ body {
     box-sizing: border-box;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    flex-shrink: 0;
+}
+
 .logo img {
-    height: clamp(30px, 5vw, 40px);
+    height: 40px;
     width: auto;
+    max-width: 200px;
+    min-width: 120px;
     transition: transform 0.3s ease;
+    object-fit: contain;
+    display: block;
+    opacity: 1 !important;
+    filter: none !important;
 }
 
 .logo img:hover {
@@ -513,7 +534,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
+    .logo img {
+        height: 35px;
+        max-width: 150px;
+    }
     
     .nav-menu {
         position: fixed;
@@ -610,6 +634,11 @@ body {
 }
 
 @media (max-width: 480px) {
+    .logo img {
+        height: 30px;
+        max-width: 120px;
+    }
+    
     .hero-title {
         font-size: 2rem;
         line-height: 1.2;
