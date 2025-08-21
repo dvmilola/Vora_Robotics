@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProductsServicesPage from './pages/ProductsServicesPage';
@@ -14,15 +15,16 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop />
         <Navbar />
-                            <Routes>
-                      <Route path="/" element={<HomePage />} />
-                      <Route path="/about" element={<AboutPage />} />
-                      <Route path="/products-services" element={<ProductsServicesPage />} />
-                      <Route path="/contact" element={<ContactPage />} />
-                      <Route path="/team" element={<TeamPage />} />
-                      <Route path="/news-events" element={<NewsEventsPage />} />
-                    </Routes>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/products-services" element={<ProductsServicesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/team" element={<TeamPage />} />
+          <Route path="/news-events" element={<NewsEventsPage />} />
+        </Routes>
         <Footer />
       </div>
     </Router>
