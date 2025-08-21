@@ -33,7 +33,7 @@ const ContactPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/Assets/person-office-work-day.jpg')"
+            backgroundImage: "url('/person-office-work-day.jpg')"
           }}
         >
           {/* Dark Overlay */}

@@ -15,7 +15,7 @@ const AboutPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/Assets/factory-workshop-interior-machines-glass-production-background.jpg')"
+            backgroundImage: "url('/factory-workshop-interior-machines-glass-production-background.jpg')"
           }}
         >
           {/* Dark Overlay */}
@@ -46,17 +46,7 @@ const AboutPage = () => {
               Vora Robotics is transforming industries with human-centered automation, cutting-edge drones, and smart robotics.
             </motion.p>
             
-            {/* CTA Button */}
-            <motion.button
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-green-500 hover:bg-green-600 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300"
-            >
-              OUR MISSION
-            </motion.button>
+
           </div>
         </div>
       </section>
@@ -138,7 +128,7 @@ const AboutPage = () => {
                 <div 
                   className="aspect-[4/3] bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: "url('/Assets/people-office-work-day.jpg')"
+                    backgroundImage: "url('/people-office-work-day.jpg')"
                   }}
                 >
                   {/* Subtle Overlay */}

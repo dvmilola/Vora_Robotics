@@ -101,7 +101,7 @@ const Footer = () => {
           {/* Logo and Company Info */}
           <div className="lg:col-span-1">
             <img 
-              src="/Assets/Vora_Robotics_Horizontal_Logo_RGB_Green_White.png" 
+              src="/Vora_Robotics_Horizontal_Logo_RGB_Green_White.png" 
               alt="Vora Robotics" 
               className="h-12 w-auto mb-4"
             />

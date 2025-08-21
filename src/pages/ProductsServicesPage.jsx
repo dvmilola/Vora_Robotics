@@ -74,7 +74,7 @@ const ProductsServicesPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/Assets/drone-spraying-fertilizer-vegetable-green-plants-agriculture-technology-farm-automation.jpg')"
+            backgroundImage: "url('/drone-spraying-fertilizer-vegetable-green-plants-agriculture-technology-farm-automation.jpg')"
           }}
         >
           {/* Dark Overlay */}

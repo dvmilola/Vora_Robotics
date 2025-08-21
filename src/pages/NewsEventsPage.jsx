@@ -14,7 +14,7 @@ const NewsEventsPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('/Assets/people-hangout-together-coffee-shop.jpg')"
+            backgroundImage: "url('/people-hangout-together-coffee-shop.jpg')"
           }}
         >
           {/* Dark Overlay */}
