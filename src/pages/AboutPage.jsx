@@ -15,7 +15,7 @@ const AboutPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('Assets/factory-workshop-interior-machines-glass-production-background.jpg')"
+            backgroundImage: "url('/Assets/factory-workshop-interior-machines-glass-production-background.jpg')"
           }}
         >
           {/* Dark Overlay */}
@@ -138,7 +138,7 @@ const AboutPage = () => {
                 <div 
                   className="aspect-[4/3] bg-cover bg-center bg-no-repeat"
                   style={{
-                    backgroundImage: "url('Assets/people-office-work-day.jpg')"
+                    backgroundImage: "url('/Assets/people-office-work-day.jpg')"
                   }}
                 >
                   {/* Subtle Overlay */}

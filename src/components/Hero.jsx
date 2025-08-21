@@ -8,25 +8,25 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      videoSrc: "Assets/drone.mp4",
+      videoSrc: "/Assets/drone.mp4",
       title: "We Build Solutions That Solve Real Problems",
       subtitle: "Precision in Motion, Excellence in Automation"
     },
     {
       id: 2,
-      videoSrc: "Assets/automation.mov",
+      videoSrc: "/Assets/automation.mov",
       title: "We Build Solutions That Solve Real Problems",
       subtitle: "Precision in Motion, Excellence in Automation"
     },
     {
       id: 3,
-      videoSrc: "Assets/tools.mp4",
+      videoSrc: "/Assets/tools.mp4",
       title: "We Build Solutions That Solve Real Problems",
       subtitle: "Precision in Motion, Excellence in Automation"
     },
     {
       id: 4,
-      videoSrc: "Assets/raas.mp4",
+      videoSrc: "/Assets/raas.mp4",
       title: "We Build Solutions That Solve Real Problems",
       subtitle: "Precision in Motion, Excellence in Automation"
     }

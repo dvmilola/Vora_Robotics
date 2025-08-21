@@ -256,7 +256,7 @@ const TeamPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('Assets/group-afro-americans-working-together.jpg')"
+            backgroundImage: "url('/Assets/group-afro-americans-working-together.jpg')"
           }}
         >
           {/* Dark Overlay */}

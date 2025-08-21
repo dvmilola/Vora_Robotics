@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-content">
                                 <Link to="/" className="logo">
-                        <img src="Assets/Vora_Robotics_Horizontal_Logo_RGB_Green_White.png" alt="Vora Robotics" />
+                        <img src="/Assets/Vora_Robotics_Horizontal_Logo_RGB_Green_White.png" alt="Vora Robotics" />
                       </Link>
                                                         <ul className={`nav-menu ${isMobileMenuOpen ? 'active' : ''}`}>
                                     <li><Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link></li>
