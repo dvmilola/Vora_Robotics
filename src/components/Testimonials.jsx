@@ -115,32 +115,32 @@ const Testimonials = () => {
 
         {/* Testimonials Carousel */}
         <div 
-          className="relative max-w-6xl mx-auto"
+          className="relative max-w-6xl mx-auto px-8 md:px-12"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group"
+            className="absolute -left-2 md:-left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group shadow-lg"
           >
             <Icon 
               icon="mdi:chevron-left" 
-              width="20" 
-              height="20"
-              className="transform group-hover:scale-110 transition-transform duration-300"
+              width="16" 
+              height="16"
+              className="md:w-5 md:h-5 transform group-hover:scale-110 transition-transform duration-300"
             />
           </button>
 
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-12 h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group"
+            className="absolute -right-2 md:-right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-all duration-300 group shadow-lg"
           >
             <Icon 
               icon="mdi:chevron-right" 
-              width="20" 
-              height="20"
-              className="transform group-hover:scale-110 transition-transform duration-300"
+              width="16" 
+              height="16"
+              className="md:w-5 md:h-5 transform group-hover:scale-110 transition-transform duration-300"
             />
           </button>
 
@@ -155,7 +155,7 @@ const Testimonials = () => {
                 stiffness: 300,
                 damping: 30
               }}
-              className="flex gap-6 lg:gap-8"
+              className="flex gap-4 md:gap-6 lg:gap-8"
             >
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -170,7 +170,7 @@ const Testimonials = () => {
                       y: -8,
                       transition: { duration: 0.3 }
                     }}
-                    className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-8 h-full group hover:bg-white/10 transition-all duration-500"
+                    className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6 md:p-6 lg:p-8 h-full group hover:bg-white/10 transition-all duration-500 mx-2 md:mx-0"
                   >
                     {/* Quote Icon */}
                     <div className="text-green-400 text-2xl mb-4">
