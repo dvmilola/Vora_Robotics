@@ -1,0 +1,21 @@
+{
+  "name": "Vora Robotics",
+  "short_name": "Vora Robotics",
+  "description": "Empowering industries through innovative automation and robotics solutions",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D1C23",
+  "theme_color": "#0BDA87",
+  "icons": [
+    {
+      "src": "/Vora_Robotics_Logomark_RGB_Green_Charcoal.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Vora_Robotics_Logomark_RGB_Green_Charcoal.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

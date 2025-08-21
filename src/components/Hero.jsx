@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 
 const Hero = () => {
@@ -93,9 +94,9 @@ const Hero = () => {
                     <h1 className="hero-title gradient-text">We Build Solutions That Solve Real Problems</h1>
                     <p className="hero-subtitle">{slide.subtitle}</p>
                                           <div className="hero-cta">
-                        <a href="services.html" className="btn-primary large">
+                        <Link to="/products-services" className="btn-primary large">
                           Explore Our Solutions →
-                        </a>
+                        </Link>
                       </div>
                   </div>
                 </div>

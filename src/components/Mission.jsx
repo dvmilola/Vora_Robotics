@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 
 const Mission = () => {
@@ -19,10 +20,10 @@ const Mission = () => {
             </p>
           </div>
           <div className="mission-cta">
-                                    <a href="about.html" className="mission-btn">
-                          <span className="btn-text">Learn more about our mission</span>
-                          <Icon icon="mdi:arrow-right" width="16" height="16" className="btn-arrow" />
-                        </a>
+            <Link to="/about" className="mission-btn">
+              <span className="btn-text">Learn more about our mission</span>
+              <Icon icon="mdi:arrow-right" width="16" height="16" className="btn-arrow" />
+            </Link>
           </div>
         </div>
       </div>
